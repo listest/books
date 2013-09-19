@@ -1,17 +1,19 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: myapp_development
-  pool: 5
+  database: library
+  adapter: mysql2
   username: root
-  password:
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
+  encoding: latin1
+
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: myapp_test
-  pool: 5
+  database: library_test
+  adapter: mysql2
   username: root
-  password:
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
+  encoding: latin1
+
 production:
   adapter: postgresql
   encoding: unicode
