@@ -3,7 +3,7 @@ defaults: &defaults
   username: root
   password: 
   socket: /var/run/mysqld/mysqld.sock
-  encoding: unicode
+  encoding: latin1
   
 development:
   database: library
